@@ -1,0 +1,12 @@
+<div class="gallery">
+  <div class="photoset">
+    <% if (item.photos.length){ %>
+      <% item.photos.forEach(function(photo){ %>
+       	<a href="<%- config.root %><%- item.path %>"> <img src="<%- photo %>" /></a>
+      <% }); %>
+    <% } else { %>
+       <img src="<%- item.photos %>">
+    <% } %>
+  </div>
+
+</div>

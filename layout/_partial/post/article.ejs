@@ -1,0 +1,31 @@
+<article class="<%= item.layout %>">
+	<div class="article">
+	
+		<h1 class="article-head"><%= item.title %></h1>
+		<time class="archive-time" datetime="<%= item.date.toDate().toISOString() %>"><h4><%= item.date.format(config.date_format) %></h4></time>
+		
+		<div class="article-cont">
+			<% if (item.toc==true) {%>
+				<strong class="article-toc" >文章目录</strong>
+				<%- toc(item.content) %>
+			<% } %>
+
+			<%- item.content %>
+		</div>
+
+		<footer class="article-share">
+			<div class="article-category">
+				<%- partial('category') %>
+				
+			</div>
+			<div class="article-tags">
+				
+			</div>
+			
+			<div class="baidu-share">
+				<%- partial('baidushare') %>	
+			</div>
+		</footer>
+	</div>
+	<div class="comment"></div>
+</article>

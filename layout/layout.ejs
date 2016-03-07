@@ -1,0 +1,13 @@
+<% if(page.layout!==false) { %>
+<%- partial('_partial/head') %>
+
+<body>
+	<div class="container">
+		<div><%- partial('_partial/link') %></div>
+		<div><%- partial('_partial/navbar') %></div>
+		<div id="content" ><%- body %> </div>
+	</div>
+	<footer id="foot"><%- partial('_partial/foot') %></footer>
+</body>
+		
+<% } %>

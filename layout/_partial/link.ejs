@@ -1,0 +1,22 @@
+	<div id="social-font">
+		<div class="social">
+		<% if(theme.author.weibo){ %>
+		<a href="http://weibo.com/<%= theme.author.weibo %>" target="_blank" title="weibo" alt="weibo"><i class="fa fa-weibo"></i></a>
+		<% } %>
+		<% if(theme.author.twitter){ %>
+		<a href="https://twitter.com/<%=theme.author.twitter %>" target="_blank" title="twitter" alt="twitter"><i class="fa fa-twitter"></i></a>
+		<% } %>
+		<% if(theme.author.github){ %>
+		<a href="https://github.com/<%=theme.author.github %>" target="_blank" title="github" alt="github"><i class="fa fa-github"></i></a>
+		<% } %>
+		<% if(theme.author.facebook){ %>
+		<a href="https://www.facebook.com/<%=theme.author.facebook %>" target="_blank" title="facebook" alt="facebook"><i class="fa fa-facebook"></i></a>
+		<% } %>
+		<% if(theme.author.linkedin){ %>
+        <a href="https://www.linkedin.com/<%=theme.author.linkedin %>" target="_blank" title="linkedin" alt="linkedin"> <i class="fa fa-linkedin"></i></a>
+        <% } %>
+		<% if(theme.author.email){ %>
+		<a href="mailto:<%=theme.author.email %>" target="_blank" class="icon-email" title="Email" alt="Email"><i class="fa fa-envelope"></i></a>
+		<% } %>
+		</div>
+	</div>

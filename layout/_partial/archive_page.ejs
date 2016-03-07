@@ -1,0 +1,9 @@
+<li class="archive-lis">
+	<time class="archive-lis-time" datetime="<%= item.date.toDate().toISOString() %>"><h4><%= item.date.format(config.date_format) %></h4></time>
+	<% if (item.title){ %>
+		<h3><a href="<%- config.root %><%= item.path %>" ><%= item.title %></a></h3>
+	<% } else{ %>
+		<h3><a href="<%- config.root %><%= item.path %>">&nbsp; </a></h3>
+	<% } %>
+	
+</li>
